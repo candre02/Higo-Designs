@@ -9,7 +9,7 @@ import {
 
 } from "@chakra-ui/react";
 
-export default function App() {
+export default function Shop() {
     const Feature = (props) => {
 return (
 <Flex
@@ -97,7 +97,7 @@ return (
       </chakra.button>
     </Flex>
   </Box>
-</Flex>;
+</Flex>
 )
     }
 }
