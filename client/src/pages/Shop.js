@@ -5,13 +5,123 @@ import {
     chakra,
     Box,
     Flex,
-    Image,
+    Container
 
 } from "@chakra-ui/react";
 
 export default function Shop() {
-    const Feature = (props) => {
-return (
+  return (
+    <Container>
+      
+        <div className="bg-light border">
+    <Flex
+  bg="#edf3f8"
+  _dark={{
+    bg: "#3e3e3e",
+  }}
+  p={50}
+  w="full"
+  alignItems="center"
+  justifyContent="center"
+>
+  <Flex
+    direction="column"
+    justifyContent="center"
+    alignItems="center"
+    w="sm"
+    mx="auto"
+  >
+    <Box
+      bg="gray.300"
+      h={64}
+      w="full"
+      rounded="lg"
+      shadow="md"
+      bgSize="cover"
+      bgPos="center"
+      style={{
+        backgroundImage:
+          "url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)",
+      }}
+    ></Box>
+
+    <Box
+      w={{
+        base: 56,
+        md: 64,
+      }}
+      bg="white"
+      _dark={{
+        bg: "gray.800",
+      }}
+      mt={-10}
+      shadow="lg"
+      rounded="lg"
+      overflow="hidden"
+    >
+      <chakra.h3
+        py={2}
+        textAlign="center"
+        fontWeight="bold"
+        textTransform="uppercase"
+        color="gray.800"
+        _dark={{
+          color: "white",
+        }}
+        letterSpacing={1}
+      >
+        Nike Revolt
+      </chakra.h3>
+
+      <Flex
+        alignItems="center"
+        justifyContent="space-between"
+        py={2}
+        px={3}
+        bg="gray.200"
+        _dark={{
+          bg: "gray.700",
+        }}
+      >
+        <chakra.span
+          fontWeight="bold"
+          color="gray.800"
+          _dark={{
+            color: "gray.200",
+          }}
+        >
+          $129
+        </chakra.span>
+        <chakra.button
+          bg="gray.800"
+          fontSize="xs"
+          fontWeight="bold"
+          color="white"
+          px={2}
+          py={1}
+          rounded="lg"
+          textTransform="uppercase"
+          _hover={{
+            bg: "gray.700",
+            _dark: {
+              bg: "gray.600",
+            },
+          }}
+          _focus={{
+            bg: "gray.700",
+            _dark: {
+              bg: "gray.600",
+            },
+            outline: "none",
+          }}
+        >
+          Add to cart
+        </chakra.button>
+      </Flex>
+    </Box>
+  </Flex>
+</Flex>
+</div>
 <Flex
   bg="#edf3f8"
   _dark={{
@@ -22,82 +132,867 @@ return (
   alignItems="center"
   justifyContent="center"
 >
-  <Box
-    maxW="xs"
+  <Flex
+    direction="column"
+    justifyContent="center"
+    alignItems="center"
+    w="sm"
     mx="auto"
-    bg="white"
-    _dark={{
-      bg: "gray.800",
-    }}
-    shadow="lg"
-    rounded="lg"
   >
-    <Box px={4} py={2}>
-      <chakra.h1
+    <Box
+      bg="gray.300"
+      h={64}
+      w="full"
+      rounded="lg"
+      shadow="md"
+      bgSize="cover"
+      bgPos="center"
+      style={{
+        backgroundImage:
+          "url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)",
+      }}
+    ></Box>
+
+    <Box
+      w={{
+        base: 56,
+        md: 64,
+      }}
+      bg="white"
+      _dark={{
+        bg: "gray.800",
+      }}
+      mt={-10}
+      shadow="lg"
+      rounded="lg"
+      overflow="hidden"
+    >
+      <chakra.h3
+        py={2}
+        textAlign="center"
+        fontWeight="bold"
+        textTransform="uppercase"
         color="gray.800"
         _dark={{
           color: "white",
         }}
-        fontWeight="bold"
-        fontSize="3xl"
-        textTransform="uppercase"
+        letterSpacing={1}
       >
-        NIKE AIR
-      </chakra.h1>
-      <chakra.p
-        mt={1}
-        fontSize="sm"
-        color="gray.600"
+        Nike Revolt
+      </chakra.h3>
+
+      <Flex
+        alignItems="center"
+        justifyContent="space-between"
+        py={2}
+        px={3}
+        bg="gray.200"
         _dark={{
-          color: "gray.400",
+          bg: "gray.700",
         }}
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos
-        quidem sequi illum facere recusandae voluptatibus
-      </chakra.p>
+        <chakra.span
+          fontWeight="bold"
+          color="gray.800"
+          _dark={{
+            color: "gray.200",
+          }}
+        >
+          $129
+        </chakra.span>
+        <chakra.button
+          bg="gray.800"
+          fontSize="xs"
+          fontWeight="bold"
+          color="white"
+          px={2}
+          py={1}
+          rounded="lg"
+          textTransform="uppercase"
+          _hover={{
+            bg: "gray.700",
+            _dark: {
+              bg: "gray.600",
+            },
+          }}
+          _focus={{
+            bg: "gray.700",
+            _dark: {
+              bg: "gray.600",
+            },
+            outline: "none",
+          }}
+        >
+          Add to cart
+        </chakra.button>
+      </Flex>
     </Box>
-
-    <Image
-      h={48}
+  </Flex>
+</Flex>
+<div>
+<Flex
+  bg="#edf3f8"
+  _dark={{
+    bg: "#3e3e3e",
+  }}
+  p={50}
+  w="full"
+  alignItems="center"
+  justifyContent="center"
+>
+  <Flex
+    direction="column"
+    justifyContent="center"
+    alignItems="center"
+    w="sm"
+    mx="auto"
+  >
+    <Box
+      bg="gray.300"
+      h={64}
       w="full"
-      fit="cover"
-      mt={2}
-      src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&q=80"
-      alt="NIKE AIR"
-    />
+      rounded="lg"
+      shadow="md"
+      bgSize="cover"
+      bgPos="center"
+      style={{
+        backgroundImage:
+          "url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)",
+      }}
+    ></Box>
 
-    <Flex
-      alignItems="center"
-      justifyContent="space-between"
-      px={4}
-      py={2}
-      bg="gray.900"
-      roundedBottom="lg"
+    <Box
+      w={{
+        base: 56,
+        md: 64,
+      }}
+      bg="white"
+      _dark={{
+        bg: "gray.800",
+      }}
+      mt={-10}
+      shadow="lg"
+      rounded="lg"
+      overflow="hidden"
     >
-      <chakra.h1 color="white" fontWeight="bold" fontSize="lg">
-        $129
-      </chakra.h1>
-      <chakra.button
-        px={2}
-        py={1}
-        bg="white"
-        fontSize="xs"
-        color="gray.900"
+      <chakra.h3
+        py={2}
+        textAlign="center"
         fontWeight="bold"
-        rounded="lg"
         textTransform="uppercase"
-        _hover={{
-          bg: "gray.200",
+        color="gray.800"
+        _dark={{
+          color: "white",
         }}
-        _focus={{
-          bg: "gray.400",
+        letterSpacing={1}
+      >
+        Nike Revolt
+      </chakra.h3>
+
+      <Flex
+        alignItems="center"
+        justifyContent="space-between"
+        py={2}
+        px={3}
+        bg="gray.200"
+        _dark={{
+          bg: "gray.700",
         }}
       >
-        Add to cart
-      </chakra.button>
-    </Flex>
-  </Box>
+        <chakra.span
+          fontWeight="bold"
+          color="gray.800"
+          _dark={{
+            color: "gray.200",
+          }}
+        >
+          $129
+        </chakra.span>
+        <chakra.button
+          bg="gray.800"
+          fontSize="xs"
+          fontWeight="bold"
+          color="white"
+          px={2}
+          py={1}
+          rounded="lg"
+          textTransform="uppercase"
+          _hover={{
+            bg: "gray.700",
+            _dark: {
+              bg: "gray.600",
+            },
+          }}
+          _focus={{
+            bg: "gray.700",
+            _dark: {
+              bg: "gray.600",
+            },
+            outline: "none",
+          }}
+        >
+          Add to cart
+        </chakra.button>
+      </Flex>
+    </Box>
+  </Flex>
 </Flex>
-)
-    }
+</div>
+<div>
+<Flex
+  bg="#edf3f8"
+  _dark={{
+    bg: "#3e3e3e",
+  }}
+  p={50}
+  w="full"
+  alignItems="center"
+  justifyContent="center"
+>
+  <Flex
+    direction="column"
+    justifyContent="center"
+    alignItems="center"
+    w="sm"
+    mx="auto"
+  >
+    <Box
+      bg="gray.300"
+      h={64}
+      w="full"
+      rounded="lg"
+      shadow="md"
+      bgSize="cover"
+      bgPos="center"
+      style={{
+        backgroundImage:
+          "url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)",
+      }}
+    ></Box>
+
+    <Box
+      w={{
+        base: 56,
+        md: 64,
+      }}
+      bg="white"
+      _dark={{
+        bg: "gray.800",
+      }}
+      mt={-10}
+      shadow="lg"
+      rounded="lg"
+      overflow="hidden"
+    >
+      <chakra.h3
+        py={2}
+        textAlign="center"
+        fontWeight="bold"
+        textTransform="uppercase"
+        color="gray.800"
+        _dark={{
+          color: "white",
+        }}
+        letterSpacing={1}
+      >
+        Nike Revolt
+      </chakra.h3>
+
+      <Flex
+        alignItems="center"
+        justifyContent="space-between"
+        py={2}
+        px={3}
+        bg="gray.200"
+        _dark={{
+          bg: "gray.700",
+        }}
+      >
+        <chakra.span
+          fontWeight="bold"
+          color="gray.800"
+          _dark={{
+            color: "gray.200",
+          }}
+        >
+          $129
+        </chakra.span>
+        <chakra.button
+          bg="gray.800"
+          fontSize="xs"
+          fontWeight="bold"
+          color="white"
+          px={2}
+          py={1}
+          rounded="lg"
+          textTransform="uppercase"
+          _hover={{
+            bg: "gray.700",
+            _dark: {
+              bg: "gray.600",
+            },
+          }}
+          _focus={{
+            bg: "gray.700",
+            _dark: {
+              bg: "gray.600",
+            },
+            outline: "none",
+          }}
+        >
+          Add to cart
+        </chakra.button>
+      </Flex>
+    </Box>
+  </Flex>
+</Flex>
+</div>
+<div>
+<Flex
+  bg="#edf3f8"
+  _dark={{
+    bg: "#3e3e3e",
+  }}
+  p={50}
+  w="full"
+  alignItems="center"
+  justifyContent="center"
+>
+  <Flex
+    direction="column"
+    justifyContent="center"
+    alignItems="center"
+    w="sm"
+    mx="auto"
+  >
+    <Box
+      bg="gray.300"
+      h={64}
+      w="full"
+      rounded="lg"
+      shadow="md"
+      bgSize="cover"
+      bgPos="center"
+      style={{
+        backgroundImage:
+          "url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)",
+      }}
+    ></Box>
+
+    <Box
+      w={{
+        base: 56,
+        md: 64,
+      }}
+      bg="white"
+      _dark={{
+        bg: "gray.800",
+      }}
+      mt={-10}
+      shadow="lg"
+      rounded="lg"
+      overflow="hidden"
+    >
+      <chakra.h3
+        py={2}
+        textAlign="center"
+        fontWeight="bold"
+        textTransform="uppercase"
+        color="gray.800"
+        _dark={{
+          color: "white",
+        }}
+        letterSpacing={1}
+      >
+        Nike Revolt
+      </chakra.h3>
+
+      <Flex
+        alignItems="center"
+        justifyContent="space-between"
+        py={2}
+        px={3}
+        bg="gray.200"
+        _dark={{
+          bg: "gray.700",
+        }}
+      >
+        <chakra.span
+          fontWeight="bold"
+          color="gray.800"
+          _dark={{
+            color: "gray.200",
+          }}
+        >
+          $129
+        </chakra.span>
+        <chakra.button
+          bg="gray.800"
+          fontSize="xs"
+          fontWeight="bold"
+          color="white"
+          px={2}
+          py={1}
+          rounded="lg"
+          textTransform="uppercase"
+          _hover={{
+            bg: "gray.700",
+            _dark: {
+              bg: "gray.600",
+            },
+          }}
+          _focus={{
+            bg: "gray.700",
+            _dark: {
+              bg: "gray.600",
+            },
+            outline: "none",
+          }}
+        >
+          Add to cart
+        </chakra.button>
+      </Flex>
+    </Box>
+  </Flex>
+</Flex>
+</div>
+<div>
+<Flex
+  bg="#edf3f8"
+  _dark={{
+    bg: "#3e3e3e",
+  }}
+  p={50}
+  w="full"
+  alignItems="center"
+  justifyContent="center"
+>
+  <Flex
+    direction="column"
+    justifyContent="center"
+    alignItems="center"
+    w="sm"
+    mx="auto"
+  >
+    <Box
+      bg="gray.300"
+      h={64}
+      w="full"
+      rounded="lg"
+      shadow="md"
+      bgSize="cover"
+      bgPos="center"
+      style={{
+        backgroundImage:
+          "url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)",
+      }}
+    ></Box>
+
+    <Box
+      w={{
+        base: 56,
+        md: 64,
+      }}
+      bg="white"
+      _dark={{
+        bg: "gray.800",
+      }}
+      mt={-10}
+      shadow="lg"
+      rounded="lg"
+      overflow="hidden"
+    >
+      <chakra.h3
+        py={2}
+        textAlign="center"
+        fontWeight="bold"
+        textTransform="uppercase"
+        color="gray.800"
+        _dark={{
+          color: "white",
+        }}
+        letterSpacing={1}
+      >
+        Nike Revolt
+      </chakra.h3>
+
+      <Flex
+        alignItems="center"
+        justifyContent="space-between"
+        py={2}
+        px={3}
+        bg="gray.200"
+        _dark={{
+          bg: "gray.700",
+        }}
+      >
+        <chakra.span
+          fontWeight="bold"
+          color="gray.800"
+          _dark={{
+            color: "gray.200",
+          }}
+        >
+          $129
+        </chakra.span>
+        <chakra.button
+          bg="gray.800"
+          fontSize="xs"
+          fontWeight="bold"
+          color="white"
+          px={2}
+          py={1}
+          rounded="lg"
+          textTransform="uppercase"
+          _hover={{
+            bg: "gray.700",
+            _dark: {
+              bg: "gray.600",
+            },
+          }}
+          _focus={{
+            bg: "gray.700",
+            _dark: {
+              bg: "gray.600",
+            },
+            outline: "none",
+          }}
+        >
+          Add to cart
+        </chakra.button>
+      </Flex>
+    </Box>
+  </Flex>
+</Flex>
+</div>
+<div>
+<Flex
+  bg="#edf3f8"
+  _dark={{
+    bg: "#3e3e3e",
+  }}
+  p={50}
+  w="full"
+  alignItems="center"
+  justifyContent="center"
+>
+  <Flex
+    direction="column"
+    justifyContent="center"
+    alignItems="center"
+    w="sm"
+    mx="auto"
+  >
+    <Box
+      bg="gray.300"
+      h={64}
+      w="full"
+      rounded="lg"
+      shadow="md"
+      bgSize="cover"
+      bgPos="center"
+      style={{
+        backgroundImage:
+          "url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)",
+      }}
+    ></Box>
+
+    <Box
+      w={{
+        base: 56,
+        md: 64,
+      }}
+      bg="white"
+      _dark={{
+        bg: "gray.800",
+      }}
+      mt={-10}
+      shadow="lg"
+      rounded="lg"
+      overflow="hidden"
+    >
+      <chakra.h3
+        py={2}
+        textAlign="center"
+        fontWeight="bold"
+        textTransform="uppercase"
+        color="gray.800"
+        _dark={{
+          color: "white",
+        }}
+        letterSpacing={1}
+      >
+        Nike Revolt
+      </chakra.h3>
+
+      <Flex
+        alignItems="center"
+        justifyContent="space-between"
+        py={2}
+        px={3}
+        bg="gray.200"
+        _dark={{
+          bg: "gray.700",
+        }}
+      >
+        <chakra.span
+          fontWeight="bold"
+          color="gray.800"
+          _dark={{
+            color: "gray.200",
+          }}
+        >
+          $129
+        </chakra.span>
+        <chakra.button
+          bg="gray.800"
+          fontSize="xs"
+          fontWeight="bold"
+          color="white"
+          px={2}
+          py={1}
+          rounded="lg"
+          textTransform="uppercase"
+          _hover={{
+            bg: "gray.700",
+            _dark: {
+              bg: "gray.600",
+            },
+          }}
+          _focus={{
+            bg: "gray.700",
+            _dark: {
+              bg: "gray.600",
+            },
+            outline: "none",
+          }}
+        >
+          Add to cart
+        </chakra.button>
+      </Flex>
+    </Box>
+  </Flex>
+</Flex>
+</div>
+<div>
+<Flex
+  bg="#edf3f8"
+  _dark={{
+    bg: "#3e3e3e",
+  }}
+  p={50}
+  w="full"
+  alignItems="center"
+  justifyContent="center"
+>
+  <Flex
+    direction="column"
+    justifyContent="center"
+    alignItems="center"
+    w="sm"
+    mx="auto"
+  >
+    <Box
+      bg="gray.300"
+      h={64}
+      w="full"
+      rounded="lg"
+      shadow="md"
+      bgSize="cover"
+      bgPos="center"
+      style={{
+        backgroundImage:
+          "url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)",
+      }}
+    ></Box>
+
+    <Box
+      w={{
+        base: 56,
+        md: 64,
+      }}
+      bg="white"
+      _dark={{
+        bg: "gray.800",
+      }}
+      mt={-10}
+      shadow="lg"
+      rounded="lg"
+      overflow="hidden"
+    >
+      <chakra.h3
+        py={2}
+        textAlign="center"
+        fontWeight="bold"
+        textTransform="uppercase"
+        color="gray.800"
+        _dark={{
+          color: "white",
+        }}
+        letterSpacing={1}
+      >
+        Nike Revolt
+      </chakra.h3>
+
+      <Flex
+        alignItems="center"
+        justifyContent="space-between"
+        py={2}
+        px={3}
+        bg="gray.200"
+        _dark={{
+          bg: "gray.700",
+        }}
+      >
+        <chakra.span
+          fontWeight="bold"
+          color="gray.800"
+          _dark={{
+            color: "gray.200",
+          }}
+        >
+          $129
+        </chakra.span>
+        <chakra.button
+          bg="gray.800"
+          fontSize="xs"
+          fontWeight="bold"
+          color="white"
+          px={2}
+          py={1}
+          rounded="lg"
+          textTransform="uppercase"
+          _hover={{
+            bg: "gray.700",
+            _dark: {
+              bg: "gray.600",
+            },
+          }}
+          _focus={{
+            bg: "gray.700",
+            _dark: {
+              bg: "gray.600",
+            },
+            outline: "none",
+          }}
+        >
+          Add to cart
+        </chakra.button>
+      </Flex>
+    </Box>
+  </Flex>
+</Flex>
+</div>
+<div>
+<Flex
+  bg="#edf3f8"
+  _dark={{
+    bg: "#3e3e3e",
+  }}
+  p={50}
+  w="full"
+  alignItems="center"
+  justifyContent="center"
+>
+  <Flex
+    direction="column"
+    justifyContent="center"
+    alignItems="center"
+    w="sm"
+    mx="auto"
+  >
+    <Box
+      bg="gray.300"
+      h={64}
+      w="full"
+      rounded="lg"
+      shadow="md"
+      bgSize="cover"
+      bgPos="center"
+      style={{
+        backgroundImage:
+          "url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)",
+      }}
+    ></Box>
+
+    <Box
+      w={{
+        base: 56,
+        md: 64,
+      }}
+      bg="white"
+      _dark={{
+        bg: "gray.800",
+      }}
+      mt={-10}
+      shadow="lg"
+      rounded="lg"
+      overflow="hidden"
+    >
+      <chakra.h3
+        py={2}
+        textAlign="center"
+        fontWeight="bold"
+        textTransform="uppercase"
+        color="gray.800"
+        _dark={{
+          color: "white",
+        }}
+        letterSpacing={1}
+      >
+        Nike Revolt
+      </chakra.h3>
+
+      <Flex
+        alignItems="center"
+        justifyContent="space-between"
+        py={2}
+        px={3}
+        bg="gray.200"
+        _dark={{
+          bg: "gray.700",
+        }}
+      >
+        <chakra.span
+          fontWeight="bold"
+          color="gray.800"
+          _dark={{
+            color: "gray.200",
+          }}
+        >
+          $129
+        </chakra.span>
+        <chakra.button
+          bg="gray.800"
+          fontSize="xs"
+          fontWeight="bold"
+          color="white"
+          px={2}
+          py={1}
+          rounded="lg"
+          textTransform="uppercase"
+          _hover={{
+            bg: "gray.700",
+            _dark: {
+              bg: "gray.600",
+            },
+          }}
+          _focus={{
+            bg: "gray.700",
+            _dark: {
+              bg: "gray.600",
+            },
+            outline: "none",
+          }}
+        >
+          Add to cart
+        </chakra.button>
+      </Flex>
+    </Box>
+  </Flex>
+</Flex>
+</div>
+</Container>
+
+  )
 }
