@@ -1,14 +1,15 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 import {
   Box,
   chakra,
   Container,
+  Heading,
   Stack,
   Text,
   useColorModeValue,
   VisuallyHidden,
 } from '@chakra-ui/react';
-import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { FaInstagram } from 'react-icons/fa';
 
 
 function SocialButton(props) {
@@ -48,18 +49,17 @@ export default function Footer() {
         spacing={4}
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}>
-        <Text>© 2023 HigoDesigns.</Text>
+        
+        <Heading
+        fontSize={{ base:'med'}}>
+          Contact Us:</Heading>
+        <Text>higodesigns@gmail.com</Text>
         <Stack direction={'row'} spacing={6}>
-          <SocialButton label={'Twitter'} href={'#'}>
-            <FaTwitter />
-          </SocialButton>
-          <SocialButton label={'YouTube'} href={'#'}>
-            <FaYoutube />
-          </SocialButton>
-          <SocialButton label={'Instagram'} href={'#'}>
+          <SocialButton label={'Instagram'} href={'https://www.instagram.com/higodesigns/'} >
             <FaInstagram />
           </SocialButton>
         </Stack>
+        <Text>© 2023 HigoDesigns.</Text>
       </Container>
     </Box>
   );
