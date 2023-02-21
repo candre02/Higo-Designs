@@ -59,7 +59,7 @@ export default function Footer() {
             <FaInstagram />
           </SocialButton>
         </Stack>
-        <Text>© 2023 HigoDesigns.</Text>
+        <Text>© 2023 HigoDesigns,Inc. All rights reserved.</Text>
       </Container>
     </Box>
   );
