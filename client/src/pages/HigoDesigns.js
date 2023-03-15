@@ -9,11 +9,14 @@ import {
   useColorModeValue
 } from '@chakra-ui/react'
 
+// import bg img
+import backgroundImage from '../assets/images/trialcandles.jpg';
+
   
   export default function HigoDesigns() {
     const bg = useColorModeValue("white", "gray.800");
     return (
-      <Box pos="relative" overflow="hidden" bg={bg} mt={10}>
+      <Box pos="relative" overflow="hidden" bg={bg} mt={10} id="home">
         <Box maxW="7xl" mx="auto">
           <Box
             pos="relative"
@@ -241,9 +244,12 @@ import {
             h={[56, 72, 96, "full"]}
             w="full"
             fit="cover"
-            src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
-            alt=""
+            src='backgroundImage'
+            alt="candles"
             loading="lazy"
+            bg="gray.100"
+            opacity={0.4}
+          
           />
         </Box>
       </Box>

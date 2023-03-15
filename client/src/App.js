@@ -5,6 +5,7 @@ import About from './pages/About.js'
 import Shop from './pages/Shop.js'
 import Services from './pages/Services.js'
 import HigoDesigns from './pages/HigoDesigns.js'
+import Payment from './pages/Payment.js'
 
 import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 // import chakraProvider component
@@ -12,7 +13,7 @@ import { ChakraProvider } from '@chakra-ui/react';
 // import components
 import Footer from './components/Footer'
 import NavBar from './components/NavBar'
-import './App.css';
+
 import {
   ApolloClient,
   InMemoryCache,
@@ -60,10 +61,8 @@ function App() {
               <Route exact path="/" component={HigoDesigns} />
               <Route exact path="/about" component={About} />
               <Route exact path="/shop" component={Shop} />
-              {/* <Route exact path="/singlecomment" component={SingleComment} /> */}
-              {/* <Route exact path="/comment/:id" component={CommentList} /> */}
-              {/* <Route exact path="/profile" component={Profile} /> */}
               <Route exact path="/services" component={Services} />
+              <Route exact path="/payment" component={Payment} />
             </Switch>
             <Footer />
           </div>

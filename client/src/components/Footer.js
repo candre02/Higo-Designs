@@ -39,6 +39,7 @@ function SocialButton(props) {
 export default function Footer() {
   return (
     <Box
+    id='contact1'
       bg={useColorModeValue('gray.50', 'gray.900')}
       color={useColorModeValue('gray.700', 'gray.200')}>
       <Container
@@ -50,7 +51,7 @@ export default function Footer() {
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}>
         
-        <Heading
+        <Heading 
         fontSize={{ base:'med'}}>
           Contact Us:</Heading>
         <Text>higodesigns@gmail.com</Text>

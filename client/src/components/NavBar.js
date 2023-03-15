@@ -9,20 +9,18 @@ const AppNavbar = () => {
     // const [showModal, setShowModal] = useState(false)
   
     return (
-        <Navbar bg="dark" variant="dark" expand="lg">
-          <Container fluid>
-            <Navbar.Brand href="/">HigoDesigns</Navbar.Brand>
+        <Navbar bg="dark" variant="dark" expand="lg" id="heading">
+          <Container fluid id='tabs'>
+            <Navbar.Brand href="/" id='HD1'>HigoDesigns</Navbar.Brand>
             <Navbar.Toggle aria-controls="navbar" />
             <Navbar.Collapse id="navbar">
               <Nav className="ml-auto">
                 <Nav.Link href="/about">About</Nav.Link>
                 <Nav.Link href="/shop">Shop</Nav.Link>
                 <Nav.Link href="/services">Services</Nav.Link>
+                <Nav.Link href='/apppayment'><BagIcon w={6} h={6} /></Nav.Link>
                 </Nav>
           </Navbar.Collapse>
-          <div>
-          <BagIcon w={6} h={6} />
-          </div>
         </Container>
       </Navbar>
  )
