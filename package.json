@@ -2,6 +2,7 @@
     "name": "higo-designs",
     "version": "0.1.0",
     "private": true,
+    "homepage": "https://candre02.github.io/Higo-Designs",
     "dependencies": {
       "@apollo/client": "^3.5.10",
       "@chakra-ui/pro-theme": "^0.0.63",
@@ -23,6 +24,8 @@
       "web-vitals": "^2.1.4"
     },
     "scripts": {
+      "predeploy": "npm run build",
+      "deploy": "gh-pages -d build",
       "start": "react-scripts start",
       "build": "react-scripts build",
       "test": "react-scripts test",
@@ -45,5 +48,7 @@
         "last 1 firefox version",
         "last 1 safari version"
       ]
-    }
+    },
+ "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
